@@ -9,7 +9,7 @@
 
 html,
 body {
-  padding: 0;
+  padding: 10px;
   margin: 0;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -27,43 +27,29 @@ a {
 .text-light {
   color: var(--light);
 }
-/* navigation menu */
-.navbar {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-.nav-brand {
-  font-family: sans-serif;
-  font-weight: bold;
-  align-self: center;
-  font-size: 40px;
-}
-.collapse {
-  align-self: center;
-}
-.nav-link {
-  font-size: 18px;
-  margin: 12px;
-  color: var(--dark);
-  font-family: sans-serif;
-}
-.nav-link:hover {
-  color: var(--primary-color);
-}
-/* footer */
-footer {
-  padding-top: 4em;
-}
-
-#footer .feature-post .flex-item {
-  margin-bottom: 10px;
-}
-
-#footer .tags a {
-  border-radius: 40px;
-  padding: 10px 20px;
-  font-size: 15px;
+.about-paragraph {
+  position: static;
+  display: block;
+  overflow: scroll;
+  width: 800px;
+  max-width: 60%;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 10px;
+  float: none;
+  -webkit-box-flex: 0;
+  flex: auto;
+  font-family: "Serif roman", sans-serif;
+  color: #323649;
+  font-size: 25px;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: none;
+  list-style-type: none;
 }
