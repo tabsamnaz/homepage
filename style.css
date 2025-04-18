@@ -1,0 +1,27 @@
+body {
+  font-family: "OCR A", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar.css */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* White background */
+  height: 50px; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar span {
+  font-size: 20px;
+  color: #c8b1ec;
+  margin: 0 10px;
+}
+
+/* about.css */
+#about {
+  background-color: #661b1b;
+  padding: 20px;
+}

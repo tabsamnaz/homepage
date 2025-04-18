@@ -1,0 +1,4 @@
+@font-face {
+  font-family: "OCR A";
+  src: url("https://fonts.gstatic.com/s/ocr-a/v6/jvYI9kYo76xTjZTqkp9-Rw9P-QcN5e6JXSkqM-4Wv7z0QHQPjwrUuUzHvWtpPRAJ5W4wQ-pjkZcnTZO79ow.woff2")
+    format("woff2");
