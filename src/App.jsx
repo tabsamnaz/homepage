@@ -1,121 +1,171 @@
+
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+    <div className={`site ${darkMode ? 'dark' : ''}`}>
+
+      {/* Header */}
+      <header className="header">
+        <a href="#home" className="logo">
+          Tabsam
+        </a>
+
+        <nav className="nav">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      {/* Main */}
+      <main>
+
+        {/* Hero */}
+        <section id="home" className="hero">
+          <p className="eyebrow">
+            PROJECT MANAGER · TECHNICAL · CREATIVE
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+          <h1>
+            Hi, I'm Tabsam.
+          </h1>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <p className="hero-text">
+            I organize ideas, solve problems, and help turn
+            complicated projects into finished things.
+          </p>
+        </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        {/* Work */}
+        <section id="work" className="section">
+          <p className="eyebrow">
+            SELECTED WORK
+          </p>
+
+          <div className="section-heading">
+            <h2>
+              Things I've worked on.
+            </h2>
+          </div>
+
+          <div className="projects">
+
+            <article className="project">
+              <span className="project-number">
+                01
+              </span>
+
+              <h3>
+                Project One
+              </h3>
+
+              <p>
+                A project description will go here. We'll replace
+                this with one of your actual projects.
+              </p>
+
+              <a href="#">
+                View project →
+              </a>
+            </article>
+
+            <article className="project">
+              <span className="project-number">
+                02
+              </span>
+
+              <h3>
+                Project Two
+              </h3>
+
+              <p>
+                Another project description will go here.
+              </p>
+
+              <a href="#">
+                View project →
+              </a>
+            </article>
+
+            <article className="project">
+              <span className="project-number">
+                03
+              </span>
+
+              <h3>
+                Project Three
+              </h3>
+
+              <p>
+                Another project or experience we'll highlight.
+              </p>
+
+              <a href="#">
+                View project →
+              </a>
+            </article>
+
+          </div>
+        </section>
+
+        {/* About */}
+        <section id="about" className="section about">
+          <p className="eyebrow">
+            ABOUT
+          </p>
+
+          <h2>
+            A little about me.
+          </h2>
+
+          <p>
+            I'm interested in the space between people, technology,
+            organization, and execution.
+          </p>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="section contact">
+          <p className="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Let's talk.
+          </h2>
+
+          <a href="mailto:hello@tabsam.com">
+            hello@tabsam.com →
+          </a>
+        </section>
+
+      </main>
+
+      {/* Footer */}
+      <footer className="footer">
+        <span>
+          © 2026 Tabsam
+        </span>
+
+        <span>
+          Built with React
+        </span>
+      </footer>
+
+      {/* Theme button */}
+      <button
+        className="theme-button"
+        aria-label="Change theme"
+        onClick={() => setDarkMode(!darkMode)}
+      >
+        {darkMode ? '☼' : '◐'}
+      </button>
+
+    </div>
   )
 }
 
